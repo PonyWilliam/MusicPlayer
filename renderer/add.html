@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐添加</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .container h2{
+            font-size:25px;
+            line-height:60px;
+        }
+        .container button{
+            font-size:24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            选择音乐
+        </h2>
+        <button id="selectMusic" type="button" class="btn btn-primary btn-lg btn-block" id="add">
+            本地选择
+        </button>
+        <!--
+            在这里显示已添加的音乐
+        -->
+        <div id="musicList" class="mb-2">
+        </div>
+        <button id="submit" type="button" class="btn btn-outline-primary btn-lg btn-block">
+            导入
+        </button>
+    </div>
+    <script>
+        require('./add.js')
+    </script>
+</body>
+</html>
